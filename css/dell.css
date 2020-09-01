@@ -1,0 +1,688 @@
+* {
+    box-sizing: border-box;
+    cursor: default;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body, html {
+    margin: 0;
+}
+
+.containBox {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background: #F4F4F4;
+    font-family: SourceHanSansCN-Light;
+    margin-top: 53px;
+}
+
+.contain .imgBoxs {
+    display: none;
+}
+
+.topBag {
+    width: 100%;
+    height: 120px;
+    background-image: url(../img/dell/dell_top_app.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.titleTop {
+    text-align: center;
+    color: #373737;
+    font-size: 20px;
+}
+
+.titleTop img {
+    width: 18px;
+    height: auto;
+}
+
+.tabs {
+    width: 100%;
+}
+
+.tabs .active {
+    color: #2D85FD;
+}
+
+.tabs .item {
+    width: 150px;
+}
+
+.tabs .item img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.tabs p {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.swiper-slide {
+  transition: 300ms;
+  transform: scale(0.8);
+}
+
+.swiper-slide-active,.swiper-slide-duplicate-active{
+  transform: scale(1);
+}
+
+.demoLeft {
+    width: 100%;
+    padding: 15px;
+}
+
+.demoLeft .left {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 320px;
+    background-image: url('../img/dell/chatDemo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    color: #FEFEFE;
+    font-size: 13px;
+}
+
+.demoLeft .left .photo {
+    text-align: right;
+    line-height: 30px;
+    padding-right: 10px;
+}
+
+.demoLeft .left .name {
+    margin-top: 20px;
+    color: #2D85FD;
+}
+
+.demoLeft .left .name1 {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: Medium;
+}
+
+.demoLeft .left .info {
+    margin-top: 40px;
+    line-height: 20px;
+    padding-right: 70px;
+}
+
+.demoLeft .left .price {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: Medium;
+}
+
+.demoLeft .left .btns {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    line-height: 32px;
+    text-align: right;
+}
+
+.demoLeft .right {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    padding-bottom: 10px;
+}
+
+.demoLeft .right .texts {
+    display: none;
+}
+
+.demoLeft .right .texts .text {
+    flex: 1;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+.demoLeft .right .imgBox {
+    padding: 0 10px;
+}
+
+.demoLeft .right .imgBox img {
+    width: 100%;
+    height: auto;
+}
+
+.demoLeft .right .imgPc img {
+    margin: 0 25%;
+    width: 50%;
+    height: auto;
+}
+
+.demoLeft .right .bottom {
+    width: 100%;
+    font-size: 13px;
+    color: #2D85FD;
+    padding-left: 10px;
+}
+
+.demoLeft .bottom .item {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.demoLeft .bottom .item .line {
+    width: 4px;
+    height: 20px;
+    background: #2D85FD;
+}
+
+.demoLeft .bottom .item .text {
+    padding-left: 5px;
+    flex: 1;
+    line-height: 20px;
+    color: #61a0fd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.demoLeft .bottom .item .text span {
+    font-weight: bold;
+}
+
+.bottomBag {
+    display: none;
+}
+
+.bottomBag p {
+    color: #000;
+}
+
+.boxLive {
+    display: none;
+}
+
+.containBox .photoApp {
+    color: #ffffff;
+    background: #2D85FD;
+    line-height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 15px 15px;
+    text-align: center;
+}
+
+.containBox .address {
+    color: #535353;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 0 15px;
+}
+
+.containBox .roleInfo {
+    color: #B0B0B0;
+    font-size: 12px;
+    padding: 0 15px;
+    line-height: 30px;
+}
+
+.roleInfo a {
+    color: #B0B0B0;
+}
+
+.containBox .scrollTop {
+    color: #444444;
+    background: #E4E4E4;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 1000px) {
+    .containBox {
+        margin-top: 40px;
+    }
+
+    .contain {
+        padding-bottom: 50px;
+    }
+
+    .topBag {
+        background: #fff;
+        padding: 10px 0;
+        height: 200px;
+    }
+
+    .topBag .bag {
+        height: 180px;
+        background-image: url(../img/dell/dell_top.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .bottomBag {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 65px;
+        background-image: url(../img/dell/dell_bottom.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .bottomBag .companyInfo {
+        position: absolute;
+        top: 12px;
+        left: 25%;
+    }
+
+    .tabs {
+        width: 100%;
+    }
+
+    .tabs .active {
+        color: #2D85FD;
+    }
+
+    .tabs .item {
+        width: 300px;
+    }
+
+    .tabs .item img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .tabs p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .demoLeft {
+        position: relative;
+        width: 100%;
+        padding: 50px 200px 0 400px;
+    }
+
+    .demoRight {
+        padding: 50px 400px 0 200px;
+    }
+
+    .demoLeft .left {
+        position: absolute;
+        bottom: 0;
+        margin-left: -200px;
+        width: 310px;
+        height: 280px;
+        background-image: url('../img/dell/chatDemo.png');
+        background-size: 100% 100%;
+        padding-left: 40px;
+        color: #FEFEFE;
+        font-size: 14px;
+        z-index: 10;
+    }
+
+    .demoRight .left {
+        position: absolute;
+        bottom: 0;
+        right: 200px;
+    }
+
+    .demoLeft .left .photo {
+        text-align: right;
+        line-height: 30px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+
+    .demoLeft .left .name {
+        margin-top: 15px;
+        color: #2D85FD;
+    }
+
+    .demoLeft .left .name1 {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: Medium;
+    }
+
+    .demoLeft .left .info {
+        margin-top: 20px;
+        line-height: 20px;
+        padding-right: 30px;
+    }
+
+    .demoLeft .left .price {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: Medium;
+    }
+
+    .demoLeft .left .btns {
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        line-height: 28px;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .demoLeft .right {
+        width: 100%;
+        background: #ffffff;
+        text-align: right;
+        z-index: 5;
+        padding-bottom: 0;
+    }
+
+    .demoRight .right {
+        text-align: left;
+    }
+
+    .demoLeft .right .texts {
+        display: flex;
+    }
+
+    .demoLeft .right .texts .text {
+        flex: 1;
+        text-align: center;
+        padding: 30px 0;
+        font-size: 16px;
+    }
+
+    .demoLeft .right .imgBox {
+        padding-right: 150px;
+    }
+
+    .demoRight .right .imgBox {
+        padding-right: 0px;
+        padding-left: 150px;
+    }
+
+    .demoLeft .right .imgBox img {
+        width: 60%;
+        height: auto;
+        margin-top: 80px;
+    }
+
+    .demoLeft .right .imgPc {
+        padding-right: 100px;
+    }
+
+    .demoRight .right .imgPc {
+        padding-right: 0px;
+        padding-left: 100px;
+    }
+
+    .demoLeft .right .imgPc img {
+        width: 40%;
+        height: auto;
+    }
+
+    .demoLeft .right .bottom {
+        display: none;
+    }
+
+    .boxLive {
+        display: block;
+        width: 850px;
+        margin: 0 auto;
+        padding: 20px 100px;
+        border-bottom: 1px solid #EBEBEB;
+    }
+
+    .boxLive .photo {
+        color: #3D3D3F;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .containBox .photoApp {
+        display: none;
+    }
+
+    .containBox .scrollTop {
+        display: none;
+    }
+
+    .containBox .address {
+        margin-top: 15px;
+        color: #535353;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .containBox .roleInfo {
+        color: #B0B0B0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .boxLive .infoBox {
+        display: flex;
+    }
+
+    .boxLive .infoBox .code {
+        width: 100px;
+        margin-right: 20px;
+        padding-top: 15px;
+    }
+
+    .infoBox .code img {
+        width: 100%;
+        height: auto;
+    }
+
+    .infoBox .code p {
+        font-size: 12px;
+        text-align: center;
+        color: #808080;
+        line-height: 30px;
+    }
+
+    .boxLive .infoBox .texts {
+        flex: 1;
+    }
+
+    .infoBox .texts .title {
+        font-size: 16px;
+        color: #333333;
+        font-weight: bold;
+    }
+
+    .infoBox .texts .text {
+        font-size: 14px;
+        color: #808080;
+    }
+
+    .infoBox .texts span {
+        display: inline-block;
+        width: 30%;
+        color: #808080;
+    }
+
+    .infoBox .texts span {
+        display: inline-block;
+        width: 24%;
+        line-height: 25px;
+    }
+
+    .infoBox .texts .last {
+        width: 48%;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1500px) {
+    .topBag {
+        background: #fff;
+        padding: 10px 0;
+        height: 270px;
+    }
+
+    .topBag .bag {
+        height: 250px;
+        background-image: url(../img/dell/dell_top.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .bottomBag {
+        position: relative;
+        width: 100%;
+        height: 90px;
+        background-image: url(../img/dell/dell_bottom.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .bottomBag .companyInfo {
+        position: absolute;
+        top: 20px;
+        left: 25%;
+        font-size: 17px;
+    }
+
+    .tabs .item {
+        width: 400px;
+    }
+
+    .tabs p {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .demoLeft {
+        position: relative;
+        width: 100%;
+        padding: 50px 280px 0 540px;
+    }
+
+    .demoRight {
+        padding: 50px 540px 0 280px;
+    }
+
+    .demoLeft .left {
+        position: absolute;
+        bottom: 0;
+        margin-left: -260px;
+        width: 424px;
+        height: 392px;
+        background-image: url('../img/dell/chatDemo.png');
+        background-size: 100% 100%;
+        padding-left: 56px;
+        color: #FEFEFE;
+        font-size: 20px;
+        z-index: 10;
+    }
+
+    .demoRight .left {
+        position: absolute;
+        bottom: 0;
+        right: 280px;
+    }
+
+    .demoLeft .left .photo {
+        font-size: 16px;
+        text-align: right;
+        line-height: 40px;
+        padding-right: 10px;
+    }
+
+    .demoLeft .left .name {
+        margin-top: 20px;
+        color: #2D85FD;
+        font-size: 18px;
+    }
+
+    .demoLeft .left .name1 {
+        margin-top: 35px;
+        font-size: 25px;
+        font-weight: Medium;
+    }
+
+    .demoLeft .left .info {
+        margin-top: 35px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .demoLeft .left .price {
+        margin-top: 35px;
+        font-size: 24px;
+        font-weight: Medium;
+    }
+
+    .demoLeft .left .btns {
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        line-height: 40px;
+        text-align: right;
+        font-size: 16px;
+    }
+
+    .demoLeft .right {
+        width: 100%;
+        background: #ffffff;
+        text-align: right;
+        padding-bottom: 0;
+    }
+
+    .demoRight .right {
+        text-align: left;
+    }
+
+    .demoLeft .right .texts {
+        display: flex;
+    }
+
+    .demoLeft .right .texts .text {
+        flex: 1;
+        text-align: center;
+        padding: 30px 0;
+        font-size: 18px;
+    }
+
+    .demoLeft .right .imgBox {
+        padding-right: 150px;
+    }
+
+    .demoRight .right .imgBox {
+        padding-right: 0px;
+        padding-left: 150px;
+    }
+
+    .demoLeft .right .imgBox img {
+        width: 60%;
+        height: auto;
+    }
+
+    .demoLeft .right .imgPc img {
+        width: 35%;
+        height: auto;
+    }
+}

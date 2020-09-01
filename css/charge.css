@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    cursor: default;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body, html {
+    margin: 0;
+}
+
+.containBox {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background: #fff;
+    font-family: SourceHanSansCN-Light;
+    margin-top: 53px;
+}
+
+.topBag {
+    width: 100%;
+    height: 120px;
+    background-image: url(../img/charge/charge_top_app.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.containBox .tabs {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    color: #060001;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.containBox .tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tabs .tab {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0 15px;
+}
+
+.containBox .tabs .active {
+    color: #2D85FD;
+    border-top: 2px solid #2D85FD;
+    border-bottom: 2px solid #2D85FD;
+}
+
+.textBox .bag {
+    display: none;
+}
+
+.textBox .texts {
+    padding: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #666666;
+    display: none;
+}
+
+.textBox .texts p {
+    margin-top: 10px;
+}
+
+.textBox .texts .title {
+    color: #000;
+    font-size: 16px;
+}
+
+.textBox .texts .right {
+    text-indent: 26px;
+}
+
+.bottomBag {
+    display: none;
+}
+
+.bottomBag p {
+    color: #000;
+}
+
+.boxLive {
+    display: none;
+}
+
+.containBox .photoApp {
+    color: #ffffff;
+    background: #2D85FD;
+    line-height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 15px 15px;
+    text-align: center;
+}
+
+.containBox .address {
+    color: #535353;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 0 15px;
+}
+
+.containBox .roleInfo {
+    color: #B0B0B0;
+    font-size: 12px;
+    padding: 0 15px;
+}
+
+.roleInfo a {
+    color: #B0B0B0;
+}
+
+.containBox .scrollTop {
+    color: #444444;
+    background: #E4E4E4;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 1000px) {
+    .containBox {
+        margin-top: 40px;
+    }
+
+    .topBag {
+        background: #fff;
+        padding: 10px 0;
+        height: 200px;
+    }
+
+    .topBag .bag {
+        height: 180px;
+        background-image: url(../img/charge/charge_top.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .bottomBag {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 65px;
+        background-image: url(../img/charge/charge_bottom.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .bottomBag .companyInfo {
+        position: absolute;
+        top: 12px;
+        left: 25%;
+    }
+
+    .containBox .tabs {
+        width: 100%;
+        text-align: center;
+        font-size: 0;
+        color: #060001;
+    }
+
+    .tabs .tab {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 35px;
+        margin: 0 20px;
+    }
+
+    .containBox .textBox {
+        position: relative;
+        min-height: 900px;
+    }
+
+    .textBox .bag {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 500px;
+        height: auto;
+        display: block;
+    }
+
+    .textBox .texts {
+        padding: 15px 550px 15px 300px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #666666;
+        display: none;
+    }
+
+    .textBox .texts p {
+        margin-top: 10px;
+    }
+
+    .textBox .texts .title {
+        color: #000;
+        font-size: 17px;
+    }
+
+    .textBox .texts .right {
+        text-indent: 28px;
+    }
+
+    .boxLive {
+        display: block;
+        width: 850px;
+        margin: 0 auto;
+        padding: 20px 100px;
+        border-bottom: 1px solid #EBEBEB;
+    }
+
+    .boxLive .photo {
+        color: #3D3D3F;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .containBox .photoApp {
+        display: none;
+    }
+
+    .containBox .scrollTop {
+        display: none;
+    }
+
+    .containBox .address {
+        margin-top: 15px;
+        color: #535353;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .containBox .roleInfo {
+        color: #B0B0B0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .boxLive .infoBox {
+        display: flex;
+    }
+
+    .boxLive .infoBox .code {
+        width: 100px;
+        margin-right: 20px;
+        padding-top: 15px;
+    }
+
+    .infoBox .code img {
+        width: 100%;
+        height: auto;
+    }
+
+    .infoBox .code p {
+        font-size: 12px;
+        text-align: center;
+        color: #808080;
+        line-height: 30px;
+    }
+
+    .boxLive .infoBox .texts {
+        flex: 1;
+    }
+
+    .infoBox .texts .title {
+        font-size: 16px;
+        color: #333333;
+        font-weight: bold;
+    }
+
+    .infoBox .texts .text {
+        font-size: 14px;
+        color: #808080;
+    }
+
+    .infoBox .texts span {
+        display: inline-block;
+        width: 30%;
+        color: #808080;
+    }
+
+    .infoBox .texts span {
+        display: inline-block;
+        width: 24%;
+        line-height: 25px;
+    }
+
+    .infoBox .texts .last {
+        width: 48%;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1500px) {
+    .topBag {
+        background: #fff;
+        padding: 10px 0;
+        height: 270px;
+    }
+
+    .topBag .bag {
+        height: 250px;
+        background-image: url(../img/charge/charge_top.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .bottomBag {
+        position: relative;
+        width: 100%;
+        height: 90px;
+        background-image: url(../img/charge/charge_bottom.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .bottomBag .companyInfo {
+        position: absolute;
+        top: 20px;
+        left: 25%;
+        font-size: 17px;
+    }
+
+    .containBox .tabs {
+        width: 100%;
+        text-align: center;
+        font-size: 0;
+        color: #060001;
+    }
+
+    .tabs .tab {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 40px;
+        margin: 0 30px;
+    }
+
+    .containBox .textBox {
+        position: relative;
+        min-height: 900px;
+    }
+
+    .textBox .bag {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 650px;
+        height: auto;
+        display: block;
+    }
+
+    .textBox .texts {
+        padding: 15px 700px 15px 430px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #666666;
+        display: none;
+    }
+
+    .textBox .texts p {
+        margin-top: 20px;
+    }
+
+    .textBox .texts .title {
+        color: #000;
+        font-size: 20px;
+    }
+
+    .textBox .texts .right {
+        text-indent: 32px;
+    }
+}

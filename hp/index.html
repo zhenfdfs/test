@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>联舜计算机科技有限公司</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords"
+          content="联舜科技提供DELL、联想、HP服务器 IT外包 正版windows SQLserver SQL Server 华为 H3C交换机等10余个重要行业具有深厚积累和丰富经验">
+    <meta name="Description"
+          content="作为智慧城市与产业互联网建设的领导者，创新型技术服务提供商。联舜科技立足中国，服务全球。公司主营业务涵盖智慧业务与信息服务两大领域，具备端到端“软件+服务”综合业务能力和强大的纵深服务优势。">
+    <link rel="stylesheet" href="https://www.linksuretech.com/css/index.css">
+</head>
+<body>
+<div class="containBoxIndex">
+    <div class="container-fluid">
+        <div class="demo">
+            <img class="caidan" src="https://www.linksuretech.com/img/dell/demo.png" alt="">
+            <p class="title">联舜科技</p>
+            <a href="tel:13539915955">
+                <div class="phone">
+                    <img src="https://www.linksuretech.com/img/index/phone.png" alt="">
+                    <span>135-3991-5955</span>
+                </div>
+            </a>
+        </div>
+        <div class="collapse" id="example-navbar-collapse">
+            <div class="item active" title="service" data-name="首页">
+                <img src="https://www.linksuretech.com/img/index/logo.png" alt="">
+                <p>首页</p>
+            </div>
+            <div class="item" title="huawei" data-name="华为系">
+                <img src="https://www.linksuretech.com/img/index/huawei.png" alt="">
+                <p>华为系</p>
+            </div>
+            <div class="item" title="dell" data-name="戴尔系">
+                <img src="https://www.linksuretech.com/img/index/dell.png" alt="">
+                <p>戴尔系</p>
+            </div>
+            <div class="item" title="lenovo" data-name="联想系">
+                <img src="https://www.linksuretech.com/img/index/lenovo.png" alt="">
+                <p>联想系</p>
+            </div>
+            <div class="item" title="hp" data-name="惠普系">
+                <img src="https://www.linksuretech.com/img/index/hp.png" alt="">
+                <p>惠普系</p>
+            </div>
+            <div class="item" title="other" data-name="其他硬件">
+                <img src="https://www.linksuretech.com/img/index/other.png" alt="">
+                <p>其他硬件</p>
+            </div>
+            <div class="item" title="Software" data-name="正版软件">
+                <img src="https://www.linksuretech.com/img/index/software.png" alt="">
+                <p>正版软件</p>
+            </div>
+            <div class="item" title="charge" data-name="收费服务">
+                <img src="https://www.linksuretech.com/img/index/charge.png" alt="">
+                <p>收费服务</p>
+            </div>
+            <div class="item" title="wisdom" data-name="智慧项目">
+                <img src="https://www.linksuretech.com/img/index/wisdom.png" alt="">
+                <p>智慧项目</p>
+            </div>
+            <div class="item" title="contact" data-name="联系我们">
+                <img src="https://www.linksuretech.com/img/index/contact.png" alt="">
+                <p>联系我们</p>
+            </div>
+            <div class="lineTabs"></div>
+            <a href="tel:13539915955">
+                <div class="phone">
+                    <img src="https://www.linksuretech.com/img/index/phone.png" alt="">
+                    <span>135-3991-5955</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <iframe class="iframeBox" id="myframe" src="https://www.linksuretech.com/service.html" frameborder="0"></iframe>
+</div>
+<script src="https://www.linksuretech.com/js/jquery-1.8.3.min.js"></script>
+<script>
+    let a = 1
+    let boxWidth = $('.collapse').width()
+    let itemNum = $('.collapse .item').length
+    let leftStart = (boxWidth / itemNum) / 2 - 14 + 200
+    $('.lineTabs').css('left', leftStart)
+    $('#example-navbar-collapse .item').click(function (argument) {
+        let moveWidth = leftStart + (boxWidth / itemNum) *
+            ($(this).index())
+
+        $('#example-navbar-collapse .item').attr('class', 'item')
+        $(this).attr('class', 'item active')
+
+        $('.lineTabs').css('left', moveWidth)
+        $('.iframeBox').attr('src', $(this).attr('title') + '.html')
+        $('.container-fluid .title').html($(this).attr("data-name"))
+        console.log($(this).attr("data-name"))
+        if ($('.lineTabs').css('display') === 'none') {
+            if (a === 1) {
+                $('.collapse').css('height', heightBox)
+                $('.collapse').css('opacity', 1)
+                a = 2
+            } else {
+                $('.collapse').css('height', 0)
+                $('.collapse').css('opacity', 0)
+                a = 1
+            }
+        }
+    })
+
+    function move(index) {
+        let moveWidth = leftStart + (boxWidth / itemNum) * index
+
+        $('#example-navbar-collapse .item').attr('class', 'item')
+        $('#example-navbar-collapse .item').eq(index).attr('class', 'item active')
+
+        $('.lineTabs').css('left', moveWidth)
+        $('.iframeBox').attr('src', $('#example-navbar-collapse .item').eq(index).attr('title') + '.html')
+    }
+
+    let heightBox = itemNum * 40
+    $('.container-fluid .demo .caidan').click(function (e) {
+        if (a === 1) {
+            $('.collapse').css('height', heightBox)
+            $('.collapse').css('opacity', 1)
+            a = 2
+        } else {
+            $('.collapse').css('height', 0)
+            $('.collapse').css('opacity', 0)
+            a = 1
+        }
+    })
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3e4a7d5ff7787d3ea4a5356c0ace1f42";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

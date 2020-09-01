@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    cursor: default;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body, html {
+    margin: 0;
+}
+
+.containBoxIndex .iframeBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.containBoxIndex .service {
+    display: none;
+}
+
+.container-fluid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 3px;
+    z-index: 20;
+    font-size: 0;
+}
+
+.container-fluid .demo {
+    padding: 15px 15px 15px 45px;
+    position: relative;
+    height: 53px;
+}
+
+.container-fluid .demo .caidan {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 30px;
+    height: auto;
+    z-index: 25;
+}
+
+.container-fluid .demo .title {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 100%;
+    line-height: 23px;
+    text-align: center;
+    color: #1F1F1F;
+    font-size: 17px;
+    font-weight: bold;
+    z-index: 23;
+}
+
+.container-fluid .demo .phone {
+    position: absolute;
+    right: 0;
+    top: 17px;
+    width: 140px;
+    font-size: 15px;
+    color: #0073ee;
+    z-index: 25;
+}
+
+.container-fluid .demo .phone img {
+    width: 14px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container-fluid .collapse {
+    position: absolute;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height .5s, opacity 0.5s;
+    overflow: hidden;
+    background: #fff;
+}
+
+.container-fluid .collapse .lineTabs {
+    display: none;
+}
+
+.container-fluid .collapse .item {
+    text-align: center;
+    color: #373737;
+    font-size: 15px;
+    cursor: default;
+}
+
+.container-fluid .collapse .item img {
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    vertical-align: text-bottom;
+}
+
+.container-fluid .collapse .item p {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: text-bottom;
+    min-width: 60px;
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 1000px) {
+    .containBoxIndex .service {
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 40%;
+        z-index: 100;
+    }
+
+    .service .demo img {
+        width: 50px;
+        height: auto;
+    }
+
+    .container-fluid {
+        background: #fff;
+        padding-bottom: 3px;
+    }
+
+    .container-fluid .demo {
+        display: none;
+    }
+
+    .container-fluid .collapse {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        padding: 0 200px;
+        box-shadow: 0 0px 3px 1px #e0e0e0;
+        height: 64px;
+    }
+
+    .container-fluid .collapse .lineTabs {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        background: #2D85FD;
+        width: 28px;
+        height: 4px;
+        border-radius: 25px;
+        transition:left .5s ease;
+        -moz-transition:left .5s ease; /* Firefox 4 */
+        -webkit-transition:left .5s ease; /* Safari and Chrome */
+        -o-transition:left .5s ease; /* Opera */
+    }
+
+    .container-fluid .collapse .item {
+        flex: 1;
+        text-align: center;
+        color: #373737;
+        font-size: 15px;
+        cursor: default;
+    }
+
+    .container-fluid .collapse .item img {
+        width: auto;
+        height: 35px;
+        object-fit: cover;
+    }
+
+    .container-fluid .collapse .item p {
+        font-size: 14px;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        vertical-align: middle;
+    }
+
+    .container-fluid .collapse .active {
+        color: #2D85FD;
+    }
+
+    .container-fluid .collapse .phone {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 200px;
+        height: 64px;
+        line-height: 64px;
+        font-size: 20px;
+        color: #0073ee;
+    }
+
+    .container-fluid .collapse .phone img {
+        width: 16px;
+        height: auto;
+        vertical-align: middle;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1500px) {
+    .container-fluid .collapse {
+        height: 79px;
+    }
+
+    .container-fluid .collapse .item img {
+        width: auto;
+        height: 45px;
+        object-fit: cover;
+    }
+
+    .container-fluid .collapse .item p {
+        font-size: 16px;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        vertical-align: middle;
+    }
+
+    .container-fluid .collapse .phone {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 200px;
+        height: 79px;
+        line-height: 79px;
+        font-size: 22px;
+        color: #0073ee;
+    }
+
+    .container-fluid .collapse .phone img {
+        width: 18px;
+        height: auto;
+        vertical-align: middle;
+    }
+}
